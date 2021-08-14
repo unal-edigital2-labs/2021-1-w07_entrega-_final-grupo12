@@ -1,2 +1,6 @@
 # W07_Entrega-_final
-sdfsfsdfsdfsdf
+Integrantes: 
+-Juan Esteban Bustos
+-Jhian Emmanuel Ramos
+-Camilo Jaimes
+-Julian Enrique Tovar
