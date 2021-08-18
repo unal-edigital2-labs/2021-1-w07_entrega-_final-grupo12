@@ -40,7 +40,7 @@ Este registro se utiliza desde software para controlar el movimiento de la sigui
 |1010 |	Motor derecho antihorario, motor izquierdo horario (Giro a la derecha) |
 |1100 | Hay giro antihorario en ambos motores (Movimiento hacia atrás) |
 
-Se utilizó el siguiente código para probar su funcionamiento:
+Se utilizó el siguiente código desde software para probar su funcionamiento:
 
 ```C
 static void motor_test(void)
