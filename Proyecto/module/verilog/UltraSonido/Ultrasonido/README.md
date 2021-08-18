@@ -17,8 +17,9 @@ De esta ecuación se conoce la velocidad del sonido y el tiempo en el que el pin
 
 Se crearon dos módulos especiales, uno para la detección de los pulsos emitidos por TRIG y el cálculo de la distancia y otro para generar los pulsos en la entrada TRIG (activación del ultra sonido), cada uno con un reloj propio. 
 
+## CONTADOR
 	
-```ruby
+```verilog
 always@(posedge CLKOUT)
 	begin
 		logico=(count0[7]||count0[6]||count0[5]||count0[4]||count0[3]||count0[2]||count0[1]||count0[0]);
@@ -51,10 +52,56 @@ always@(posedge CLKOUT)
 	assign count = count0;
 ```
 	
+## Generador de pulsos
 
+```verilog
+assign trigg=(Doit && ~NoDoit);
+	
+	initial
+	begin
+		Doit<=0;
+		NoDoit<=0;
+	end
+
+	always@(posedge CLKOUT1)
+	begin
+		if(reset)
+		begin
+			Doit<=0;
+			NoDoit<=0;
+		end
+		else
+		begin
+			if(pulse)
+			begin
+				Doit<=1'b1;
+			end
+			if(pulse && Doit)
+			begin
+				NoDoit<=1'b1;
+			end
+		end
+	end
+```
  
 El resto de módulos encontrados en el bloque principal son divisores de frecuencia hechos para el correcto funcionamiento del ultra sonido.
---------------------------------------------CODIGO BLOQUE PRINCIPAL-------------------------------------------------
+
 Se utilizó el siguiente código para probar el funcionamiento del periférico:
---------------------------------------------------CODIGO EN EL MAIN DEL US--------------------------------------------
+
+```C
+	static int test_us(void){
+
+        int d;
+        
+		ultrasonido_orden_write(1);
+		bool done = false;
+		while(!done){
+			done = ultrasonido_done_read();
+		}
+		d=ultrasonido_d_read();
+		ultrasonido_orden_write(0);
+		return d;
+```
+
+
 
