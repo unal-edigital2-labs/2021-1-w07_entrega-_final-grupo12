@@ -16,7 +16,7 @@ En el presente repositorio se encuentra la documentación del proyecto propuesto
 ![image](https://user-images.githubusercontent.com/80898083/129450137-a25cf210-a061-4db9-8955-82f0634982c0.png)
 
 
-#Módulos./
+Módulos ./
 
 En esta sección se encuentran los archivos de Phyton que integran los módulos en Litex. Ademas 
 
