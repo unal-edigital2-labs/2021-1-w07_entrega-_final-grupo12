@@ -109,34 +109,9 @@ Se utilizó el módulo “cam_read” para la captura y escritura de datos en me
    ```
 # BUFFER RAM: 
 Este módulo se utilizó para la creación de la memoria de la cámara teniendo en cuenta las dimensiones de la imagen que se deseaba (160x120 pixeles) y el formato RGB 444, esto quiere decir que la memoria fue hecha para registrar 12 bits por cada dirección de memoria, por lo tanto se necesitan como mínimo 19200 direcciones.
-   ```verilog
-   // Escritura  de la memoria port 1.
-always @(posedge clk_w) begin
-       if (regwrite == 1)
-// Escribe los datos de entrada en la direcciÃ³n que addr_in se lo indique.
-             ram[addr_in] <= data_in;
-end
 
-// Lectura  de la memoria port 2.
-always @(posedge clk_r) begin
-// Se leen los datos de las direcciones addr_out y se sacan en data_out.
-		data_out <= ram[addr_out];
-end
+![image](https://user-images.githubusercontent.com/80898083/129977355-c44d367f-dbe3-4084-a7e2-6da05c173d17.png)
 
-
-always @(proc_addr_in) begin
-proc_data_in<=ram[proc_addr_in];
-end
-
-
-initial begin
-// Lee en hexadecimal (readmemb lee en binario) dentro de ram [1, pÃ¡g 217].
-	$readmemh(imageFILE, ram);
-	// En la posición n+1 (160*120) se guarda el color negro
-	ram[imaSiz] = 12'h0;
-	ram[15'hffff] = 12'h0; // Necesario par el procesamiento
-end
-   ```
 
 
 En el módulo "procesamiento" se procesa la información almacenada en la memoria para determinar el color y la forma del objeto.
