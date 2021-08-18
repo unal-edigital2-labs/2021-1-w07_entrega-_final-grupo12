@@ -95,32 +95,7 @@ static void reboot(void)
 
 static void display_test(void)
 {
-/*	int i;
-	signed char defill = 0;	//1->left, -1->right, 0->.
-	
-	char txtToDisplay[40] = {0, DISPLAY_0, DISPLAY_1,DISPLAY_2,DISPLAY_3,DISPLAY_4,DISPLAY_5,DISPLAY_6,DISPLAY_7,DISPLAY_8,DISPLAY_9,DISPLAY_A,DISPLAY_B,DISPLAY_C,DISPLAY_D,DISPLAY_E,DISPLAY_F,DISPLAY_G,DISPLAY_H,DISPLAY_I,DISPLAY_J,DISPLAY_K,DISPLAY_L,DISPLAY_M,DISPLAY_N,DISPLAY_O,DISPLAY_P,DISPLAY_Q,DISPLAY_R,DISPLAY_S,DISPLAY_T,DISPLAY_U,DISPLAY_V,DISPLAY_W,DISPLAY_X,DISPLAY_Y,DISPLAY_Z,DISPLAY_DP,DISPLAY_TR,DISPLAY_UR};
-	
-	printf("Test del los display de 7 segmentos... se interrumpe con el botton 1\n");
 
-	while(!(buttons_in_read()&1)) {
-		display(txtToDisplay);
-		if(buttons_in_read()&(1<<1)) defill = ((defill<=-1) ? -1 : defill-1);
-		if(buttons_in_read()&(1<<2)) defill = ((defill>=1) ? 1 : defill+1);
-		if (defill > 0) {
-			char tmp = txtToDisplay[0];
-			for(i=0; i<sizeof(txtToDisplay)/sizeof(txtToDisplay[i]); i++) {
-				txtToDisplay[i] = ((i==sizeof(txtToDisplay)/sizeof(txtToDisplay[i])-1) ? tmp : txtToDisplay[i+1]);
-			}
-		}
-		else if(defill < 0) {
-			char tmp = txtToDisplay[sizeof(txtToDisplay)/sizeof(txtToDisplay[0])-1];
-			for(i=sizeof(txtToDisplay)/sizeof(txtToDisplay[i])-1; i>=0; i--) {
-				txtToDisplay[i] = ((i==0) ? tmp : txtToDisplay[i-1]);
-			}
-		}
-		delay_ms(500);
-	}
-*/
 }
 
 static void led_test(void)
@@ -189,25 +164,6 @@ static void rgbled_test(void)
 }
 
 
-/*static void vga_test(void)
-{
-	int x,y;
-	
-	for(y=0; y<480; y++) {
-		for(x=0; x<640; x++) {
-			vga_cntrl_mem_we_write(0);
-			vga_cntrl_mem_adr_write(y*640+x);
-			if(x<640/3)	
-				vga_cntrl_mem_data_w_write(((int)(x/10)%2^(int)(y/10)%2)*15);
-			else if(x<2*640/3) 
-				vga_cntrl_mem_data_w_write((((int)(x/10)%2^(int)(y/10)%2)*15)<<4);
-			else 
-				vga_cntrl_mem_data_w_write((((int)(x/10)%2^(int)(y/10)%2)*15)<<8);
-			vga_cntrl_mem_we_write(1);
-		}
-	}
-}
-*/
 static void pwm_test(void)
 {  
         printf("Test del pwm... se interrumpe con el botton 1\n");
@@ -289,38 +245,6 @@ static int test_us(void){
 		
 }
 
-/*static void _test(void)
-{
-	unsigned short temp2 =0xFF;
-	printf("Test del los camara... se interrumpe con el botton 1\n");
-	while(!(buttons_in_read()&1)) {
-		unsigned short temp = camara_cntrl_mem_px_data_read();
-		if (temp2 != temp){
-			printf("el bus de la camara es : %i\n", temp);
-			printf("el boton de la camara esta en: %i\n",camara_cntrl_done_read());
-			printf("la habilitacion de la interrupción esta en : %i %i %i\n",camara_cntrl_ev_enable_read(), camara_cntrl_ev_status_read(), camara_cntrl_ev_pending_read());
-			camara_isr();
-			temp2 = temp;
-		}
-	}
-}
-*/
-
-/*static void test_ultra(void){
-	int i;
-	for(i = 1; i < 25; ++i) {
-		ultrasonido_orden_write(1);
-		bool done = false;
-		while(!done){
-			done = ultrasonido_done_read();
-		}
-		leds_out_write(ultrasonido_d_read());
-		ultrasonido_orden_write(0);
-		delay_ms(50);
-		}
-}
-*/
-
 static void test_ultra(void){
 	while(!(buttons_in_read()&1)) {
 		ultrasonido_orden_write(1);
@@ -360,7 +284,7 @@ int distanciaD;
 	if (distIR <20){
 	
 	motor_entrada_write(0);
-	//control de la camara
+
 	mp3_play();
 	
 	distanciaI=0; 
@@ -384,24 +308,12 @@ int distanciaD;
 
 	pwm_cntrl_orden_write(4);
 	delay_ms(50);
-	
-	
-	//leds_out_write(distanciaI);
-	//delay_ms(400);
-	//leds_out_write(distanciaD);
-	//delay_ms(2000);
-	//leds_out_write(distanciaA);
-	//delay_ms(2000);
-	
-	//control de la camara
-	
 
 	if(distanciaA>distanciaI && distanciaA>distanciaD){
 		motor_entrada_write(3);
 		delay_ms(1000);
 	}else if(distanciaI>distanciaA && distanciaI>distanciaD){
 		motor_entrada_write(5);
-		//delay_ms(790);
 		delay_ms(790);
 		motor_entrada_write(0);
 		delay_ms(1000);
@@ -411,7 +323,6 @@ int distanciaD;
 	}else if(distanciaD>distanciaA && distanciaI<distanciaD){
 		motor_entrada_write(10);
 		delay_ms(900);
-		//delay_ms(800);
 		motor_entrada_write(0);
 		delay_ms(1000);
 		motor_entrada_write(3);
@@ -447,8 +358,6 @@ static void console_service(void)
 		display_test();
 	else if(strcmp(token, "rgbled") == 0)
 		rgbled_test();
-	//else if(strcmp(token, "vga") == 0)
-		//vga_test();
 	else if(strcmp(token, "camara") == 0)
 		camara_test();
 	else if(strcmp(token, "pwm") == 0)
@@ -471,7 +380,6 @@ int main(void)
 	irq_setmask(0);
 	irq_setie(1);
 	uart_init();
-	//camara_init();
 
 	puts("\nSoC - RiscV project UNAL 2020-2-- CPU testing software  interrupt "__DATE__" "__TIME__"\n");
 	help();
