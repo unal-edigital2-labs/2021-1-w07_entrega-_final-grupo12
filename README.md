@@ -40,5 +40,5 @@ En esta sección encontrara los videos del fucionamiento de cada modulo y de su 
 - [PWM](https://drive.google.com/file/d/1iuK0drKznQKG5YPt6Kx4SLeGOcFT8geJ/view?usp=sharing).
 - [Motores](https://drive.google.com/file/d/1g023qtCN4vmJmZh7jRD3i76XGNkPFGcU/view?usp=sharing).
 - [Mp3](https://drive.google.com/file/d/1ti8UWqYfkx0ukT2T8rq3f_QlsviyVKIb/view?usp=sharing).
-- [Robot](https://drive.google.com/file/d/1zJQGoc-IJSvQvtxtMF0yAyCQSbPyRiU-/view?usp=sharing).
+- [Robot](https://drive.google.com/file/d/1ZfMp5GsR79qk6IgckwzcLKH6HPeusRtG/view?usp=sharing).
 
