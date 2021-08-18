@@ -5,7 +5,7 @@ Con el fin de controlar el movimiento del robot se utilizaron dos motores DC con
 ##### Ruedas delanteras                                                                                  
 ![image](https://user-images.githubusercontent.com/80898083/129971973-c1820080-d68b-456d-ac6a-7b34604f678b.png) 
 
-##### Ruedas traseras 
+##### Rueda trasera
 ![image](https://user-images.githubusercontent.com/80898083/129972025-6378d064-21f8-46b8-94fa-1fdde8814370.png)
 
 Para poder controlar los motores DC y aumentar la potencia con la que trabajan se utiliza el controlador L298N, el cual se conecta a la FPGA siguiendo el siguiente diagrama:
