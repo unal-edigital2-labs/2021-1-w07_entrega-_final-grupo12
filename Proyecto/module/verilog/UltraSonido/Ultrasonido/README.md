@@ -86,7 +86,7 @@ assign trigg=(Doit && ~NoDoit);
  
 El resto de módulos encontrados en el bloque principal son divisores de frecuencia hechos para el correcto funcionamiento del ultra sonido.
 
-Se utilizó el siguiente código para probar el funcionamiento del periférico:
+Se utilizó el siguiente código desde software para probar el funcionamiento del módulo:
 
 ```C
 	static int test_us(void){
