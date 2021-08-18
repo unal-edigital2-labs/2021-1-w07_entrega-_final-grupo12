@@ -22,4 +22,8 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 
 - Cámara
 - Ir
+- UltraSonido
+- PWM
+- Motores
+- Mp3
 
