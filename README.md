@@ -29,7 +29,7 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 
 # [Firmware](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/blob/main/Proyecto/firmware/main.c)
 
-En esta sección se encuentra el código en C implementado por software para el correcto funcionamiento de los módulos integrados, los test de cada uno y dos videos del [Robot](https://drive.google.com/drive/folders/1Hh_13-JmLhdWhKrUaU3uM7BEDILhJfw-?usp=sharing) funcionando.
+En esta sección se encuentra el código en [C]((https://github.com/unal-edigital2/w07_entrega-_final-grupo12/blob/main/Proyecto/firmware/main.c)) implementado por software para el correcto funcionamiento de los módulos integrados, los test de cada uno y dos videos del [Robot](https://drive.google.com/drive/folders/1Hh_13-JmLhdWhKrUaU3uM7BEDILhJfw-?usp=sharing) funcionando.
 
 # Videos del funcionamiento 
 En esta sección encontrara los videos del fucionamiento de cada modulo y de su funcionamiento en el laberinto.
