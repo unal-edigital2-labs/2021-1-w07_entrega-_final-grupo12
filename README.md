@@ -27,7 +27,7 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 - [Motores](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Motor#motor)
 - [Mp3](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/MP3#mp3)
 
-# [Firmware](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/blob/main/Proyecto/firmware/main.c)
+# [Firmware](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/firmware)
 
 En esta sección se encuentra el código en [C](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/blob/main/Proyecto/firmware/main.c) implementado por software para el correcto funcionamiento de los módulos integrados, los test de cada uno y dos videos del [Robot](https://drive.google.com/drive/folders/1Hh_13-JmLhdWhKrUaU3uM7BEDILhJfw-?usp=sharing) funcionando.
 
