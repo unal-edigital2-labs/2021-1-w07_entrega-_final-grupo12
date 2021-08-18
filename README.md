@@ -27,3 +27,13 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 - Motores
 - Mp3
 
+# Videos del funcionamiento 
+
+- Cámara
+- Ir
+- UltraSonido
+- PWM
+- Motores
+- Mp3
+- Robot
+
