@@ -11,7 +11,7 @@ Integrantes:
 
 # Introducción
 
-En el presente repositorio se encuentra la documentación del proyecto propuesto en la asignatura Electrónica Digital II, 2021-1. Se trada de un robot controlado mediante un FPGA el cual sigue un camino(linea) de color negro y se detiene en casa una de las intersecciones para inspeccionar los muros que se encuentrena su alrededor, segun los resultados después de escanear los muros, el robot toma la decision que se necesita para el movimienot a traves del laberinto.
+En el presente repositorio se encuentra la documentación del proyecto propuesto en la asignatura Electrónica Digital II, 2021-1. Se trada de un robot controlado mediante un FPGA el cual sigue un camino(linea) de color negro y se detiene periodicamente para inspeccionar los muros que se encuentran su alrededor, segun los resultados después de escanear los muros, el robot toma la decision que se necesita para el movimienot a traves del laberinto.
 
 ![image](https://user-images.githubusercontent.com/80898083/129450137-a25cf210-a061-4db9-8955-82f0634982c0.png)
 
