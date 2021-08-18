@@ -18,5 +18,8 @@ En el presente repositorio se encuentra la documentación del proyecto propuesto
 
 # Módulos
 
-En esta sección se encuentran los archivos de Phyton que integran los módulos en Litex. Ademas 
+En esta sección se encuentran los archivos de Phyton que integran los módulos en Litex. Además hay un listado con los módulos trabajados en el proyecto a los cuales podrá darle click para ser dirigido a los archivos de Verilog respectivamente.
+
+## Cámara
+## Ir
 
