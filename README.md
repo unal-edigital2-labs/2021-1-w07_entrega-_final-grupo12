@@ -28,6 +28,7 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 - Mp3
 
 # Videos del funcionamiento 
+En esta sección encontrara los videos del fucionamiento de cada modulo y de su funcionamiento en el laberinto.
 
 - Cámara
 - Ir
