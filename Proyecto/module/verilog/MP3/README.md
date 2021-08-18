@@ -29,7 +29,7 @@ always @ (posedge clk)  begin
 endmodule
 ```
 
-Se utilizó el siguiente código para probar su funcionamiento:
+Se utilizó el siguiente código desde software para probar su funcionamiento:
 
 ```C
 static void mp3_play(void)
