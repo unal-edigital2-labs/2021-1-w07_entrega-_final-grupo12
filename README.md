@@ -20,12 +20,12 @@ En el presente repositorio se encuentra la documentación del proyecto propuesto
 
 En esta sección se encuentran los archivos de Phyton que integran los módulos en Litex. Además hay un listado con los módulos trabajados en el proyecto a los cuales podrá darle click para ser dirigido a los archivos de Verilog respectivamente.
 
-- Cámara
-- Ir
-- UltraSonido
-- PWM
-- Motores
-- Mp3
+- [Cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Camara#configuración)
+- [Ir](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Infrarrojo/InfrafSeguidor#infrarrojo)
+- [UltraSonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/UltraSonido/Ultrasonido#ultrasonido)
+- [PWM](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Servomotor/PWM#pwm)
+- [Motores](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Motor#motor)
+- [Mp3](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/MP3#mp3)
 
 # Videos del funcionamiento 
 En esta sección encontrara los videos del fucionamiento de cada modulo y de su funcionamiento en el laberinto.
