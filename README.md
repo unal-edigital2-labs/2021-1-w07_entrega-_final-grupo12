@@ -27,6 +27,10 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 - [Motores](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Motor#motor)
 - [Mp3](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/MP3#mp3)
 
+# [Firmware](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/blob/main/Proyecto/firmware/main.c)
+
+En esta sección se encuentra el código en C implementado por software para el correcto funcionamiento de los módulos integrados; además de los test de cada uno.  
+
 # Videos del funcionamiento 
 En esta sección encontrara los videos del fucionamiento de cada modulo y de su funcionamiento en el laberinto.
 
