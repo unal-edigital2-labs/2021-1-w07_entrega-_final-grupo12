@@ -22,7 +22,7 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 
 - Cámara
 - Ir
-- [UltraSonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/blob/main/Proyecto/module/verilog/UltraSonido/Ultrasonido/README.md#ultrasonido)
+- [UltraSonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/UltraSonido/Ultrasonido#ultrasonido)
 - PWM
 - Motores
 - Mp3
