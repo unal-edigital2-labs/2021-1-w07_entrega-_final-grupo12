@@ -5,10 +5,9 @@ Integrantes:
 
 -Jhian Emmanuel Ramos
 
--Camilo Jaimes
+-Camilo Andres Jaimes Reyes
 
-
--Julian Enrique Tovar
+-Julian Enrique Tovar Aranguren
 
 # Introducción
 
