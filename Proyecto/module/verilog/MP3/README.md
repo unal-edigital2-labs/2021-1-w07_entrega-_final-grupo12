@@ -1,4 +1,4 @@
-# MP#
+# MP3
 
 Pare reproducir un audio mientras el robot esta detenido y escaneando lo que tiene alrededor, se utiliza un MP3 DFplayer mini alimentado con la FPGA y conectado a un parlante genérico de 0.5W – 8 Ohm como se muestra en el diagrama:
 
@@ -6,6 +6,28 @@ Pare reproducir un audio mientras el robot esta detenido y escaneando lo que tie
 
 El audio que se quiere reproducir se graba previamente en una memoria micro SD y se pone en el parlante; para controlar el momento en el que se reproduce el sonido se conecta la entrada digital IO_1 del reproductor a un pin de la FPGA, por lo que en el código de Verilog simplemente se utiliza un registro de un bit para poder ser manipulado desde software.
 
+```verilog
+module MP3(
+input clk,
+input  pasar1, 
+output reg salida1
+    );
+
+       
+always @ (posedge clk)  begin    
+    if (pasar1)
+    begin    
+        salida1 <= 0;    
+    end
+    else
+    if (~pasar1)
+    begin    
+        salida1 <= 1;    
+    end
+ end
+    
+endmodule
+```
 
 Se utilizó el siguiente código para probar su funcionamiento:
 
