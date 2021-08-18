@@ -37,8 +37,37 @@ endmodule
 
 Después de esto se realiza la modulación de pulsos mediante un contador y una maquina de estados para establecer la salida dependiendo del valor del registro orden.
 
-![image](https://user-images.githubusercontent.com/80898083/129971042-585ece5f-87f5-46d3-b024-47dd88db6a07.png)
 
+
+```verilog
+ if(ENABLE==1)
+  begin  
+        contador<=contador+1;
+    
+  
+        if(grados==2'b00) begin
+         ancho<=30; end               //numero de ciclos de reloj para hacer 1.5ms
+        else if(grados==2'b01) begin
+         ancho<=50; end                //numero de ciclos de reloj para hacer 2ms
+        else if(grados==2'b10) begin
+         ancho<=10; end                //numero de ciclos de reloj para hacer 1ms
+        else begin
+         ancho<=30; end 
+         
+        //Creación del pulso modulado      
+        if(contador<ancho) begin 
+        pwm<=1; end
+        else if(contador>=ancho) begin
+        pwm<=0; end 
+        else  begin
+        pwm<=0; end
+    
+        if(contador>=top-1)begin 
+        contador<=0; end
+                                                       
+  end
+```
+![image](https://user-images.githubusercontent.com/80898083/129971042-585ece5f-87f5-46d3-b024-47dd88db6a07.png)
 
 Este registro se utiliza desde software para girar el servomotor a la derecha, izquierda y delante de la siguiente manera:
 
