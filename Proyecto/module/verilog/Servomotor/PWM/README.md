@@ -15,12 +15,10 @@ Después de esto se realiza la modulación de pulsos mediante un contador y una 
 
 Este registro se utiliza desde software para girar el servomotor a la derecha, izquierda y delante de la siguiente manera:
 
-|Valor del registro| 	Movimiento realizado |
-|---|---|
-|0000 | No hay giro en ningún motor (Detenido) |
-|0011 |	Hay giro horario en ambos motores (Movimiento hacia adelante) |
-|0101 | Motor izquierdo antihorario, motor derecho horario (Giro a la izquierda) |
-|1010 |	Motor derecho antihorario, motor izquierdo horario (Giro a la derecha) |
-|1100 | Hay giro antihorario en ambos motores (Movimiento hacia atrás) |
 
+|Valor del registro |	Movimiento realizado |
+|---|---|
+|100 |	Servomotor en 90 grados (mirando al frente) |
+|101 |	Servomotor en 180 grados (mirando a la derecha)| 
+|110 |	Servomotor en 0 grados (mirando a la izquierda)|
 
