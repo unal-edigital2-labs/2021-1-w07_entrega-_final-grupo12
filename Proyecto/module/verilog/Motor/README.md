@@ -40,4 +40,22 @@ Este registro se utiliza desde software para controlar el movimiento de la sigui
 |1010 |	Motor derecho antihorario, motor izquierdo horario (Giro a la derecha) |
 |1100 | Hay giro antihorario en ambos motores (Movimiento hacia atrás) |
 
-Se probó
+Se utilizó el siguiente código para probar su funcionamiento:
+
+```C
+static void motor_test(void)
+{
+    printf("Test del motor... se interrumpe con el botton 1\n");
+        while(!(buttons_in_read()&1)) {
+	motor_entrada_write(10); // 1 derecha adelante
+	delay_ms(790);
+	motor_entrada_write(0); //2 izquierda adelante
+	delay_ms(700);
+	motor_entrada_write(5); // 4 izquierda atras
+	delay_ms(810);
+	motor_entrada_write(0); //8 derecha atras
+	delay_ms(500);
+	
+	}
+}
+```
