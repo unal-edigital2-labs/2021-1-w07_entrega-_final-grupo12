@@ -34,7 +34,7 @@ En esta sección se encuentra el código en [C](https://github.com/unal-edigital
 # Videos del funcionamiento 
 En esta sección encontrara los videos del fucionamiento de cada modulo y de su funcionamiento en el laberinto.
 
-- [Cámara]().
+- [Cámara](https://drive.google.com/file/d/1lzMEEcyJ9IH7weP6rxEjEET_1-IsgBaO/view?usp=sharing).
 - [Ir](https://drive.google.com/file/d/1dV9SI1r8zqdS_Ni_v4smj4hE9Wnl74uQ/view?usp=sharing).
 - [UltraSonido](https://drive.google.com/file/d/14NFNhAlaI67s44ADbqtb7LwVWNmsmIAM/view?usp=sharing).
 - [PWM](https://drive.google.com/file/d/1iuK0drKznQKG5YPt6Kx4SLeGOcFT8geJ/view?usp=sharing).
