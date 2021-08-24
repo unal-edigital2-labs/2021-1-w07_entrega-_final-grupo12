@@ -12,8 +12,8 @@ Para poder controlar los motores DC y aumentar la potencia con la que trabajan s
 
 ![image](https://user-images.githubusercontent.com/80898083/129972359-bf668713-1e34-4258-84e7-09dbf1d84347.png)
 
-
 En las salidas A y B se conectan los dos motores, los cuales funcionaran con el voltaje de la fuente Vin que se conecte. P ara el control digital se debe tener una tierra común entre la FPGA y la fuente y enviar un uno o cero lógicos en las entradas IN1 a IN4, por lo que la entrada digital será de 4 Bits. Estos bits se programan en Verilog como un registro igualado a la salida.
+
 ```verilog
 module motores(
 
@@ -30,6 +30,20 @@ end
 endmodule
 ```
 
+# Caja negra
+
+La caja negra diseñada para los motores es:
+
+![image](https://user-images.githubusercontent.com/80898083/130699955-5e974fe2-fa74-40a7-a982-aef132323df4.png)
+
+
+# Mapa de memoria 
+
+El mapa de memoria de los registros del driver motor es:
+
+![image](https://user-images.githubusercontent.com/80898083/130700300-ccffca4f-4e89-4087-8483-ab6ec68f2692.png)
+
+
 Este registro se utiliza desde software para controlar el movimiento de la siguiente manera:
 
 |Valor del registro| 	Movimiento realizado |
@@ -39,6 +53,8 @@ Este registro se utiliza desde software para controlar el movimiento de la sigui
 |0101 | Motor izquierdo antihorario, motor derecho horario (Giro a la izquierda) |
 |1010 |	Motor derecho antihorario, motor izquierdo horario (Giro a la derecha) |
 |1100 | Hay giro antihorario en ambos motores (Movimiento hacia atrás) |
+
+# Test desde software en C
 
 Se utilizó el siguiente código desde software para probar su funcionamiento:
 
