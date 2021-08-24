@@ -89,6 +89,8 @@ posteriormente en la memoria.
 
 - Infrarrojo_ctrl_distancia: Al ser un sensor digital este registro cambia de uno a cero dependiedo si detecta negro u otro color.
 
+## Test desde sofware en C
+
 El siguiente código que se puede encontrar en el main.c para hacer la prueba del modulo IR, este modulo al ser digital mostrará un valor muy grande en binario 
 con los leds de la fpga cuando detecte negro y un valor pequeño cuando detecta blanco o otro color.
 ```C
