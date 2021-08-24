@@ -33,9 +33,9 @@ Se usó un procesador Riscv conectado por medio de un bus de comunicación Wishb
 
 ----------------SoC------------
 
-Una vez programado el SoC fue necesario escribir el software que se ejecua en el procesador (código en C), para su uso; para esto se utilizo la informacion del archivo CSR.h (creado por Litex), el cual nos muestra todas las funciones en C que se pueden utilizar para escribir el software.
+Una vez programado el SoC fue necesario escribir el software que se ejecua en el procesador (código en C), para su uso; para esto se utilizo la informacion del archivo CSR.h (creado por Litex), el cual nos muestra todois los registros y las funciones en C que se pueden utilizar para escribir el software.
 
-El mapa de memoria base es el siguiente:
+El mapa de memoria base de los registros es el siguiente:
 
 ----------------Mapa de memoria-------------------
 
