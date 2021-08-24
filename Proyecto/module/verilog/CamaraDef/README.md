@@ -8,7 +8,7 @@ En esta sección se explicará el código encontrado en la carpeta ***CamaraDef*
 
 La caja negra de la cámara es la siguiente: 
 
-![image](https://user-images.githubusercontent.com/80898083/130694519-3c25acd3-4669-4aee-a6ad-2f36fe9cff07.png)
+![image](https://user-images.githubusercontent.com/80898083/130699754-19117e49-e91e-46cb-907a-6a2447b38500.png)
 
 
 # CONFIGURACIÓN
@@ -154,7 +154,7 @@ Las señales de salida son la del módulo VGA para mostrar la imagen de la cáma
 
 Debido a que el driver de la cámara no pudo ser implementado al SoC por medio de Litex, no fue posible obtener un mapa de memoria específico para estos registros, por lo tanto el mapa es el siguiente:
 
-![image](https://user-images.githubusercontent.com/80898083/130694851-e3d88eec-e197-4199-b742-8d2a2508ed2e.png)
+![image](https://user-images.githubusercontent.com/80898083/130699792-65779d3a-247d-4793-b19e-a11726eed34f.png)
 
 - camara_init: Se utilizó para iniciar el procesamiento de imagen de la cámara (identificar el color y la figura).
 - camara_figura: Se utiliza para identificar la figura que observa la cámara.
