@@ -31,13 +31,13 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 
 Se usó un procesador Riscv conectado por medio de un bus de comunicación Wishbone a diferentes módulos previamente programados en Verilog, esto se integra a un SoC (System on Chip) por medio de Litex, la cual es una herramienta de código abierto capaz de ensamblar de manera sencilla todos los periféricos necesarios en el proyecto.El diseño del SoC realizado es el siguiente:
 
-----------------SoC------------
+![image](https://user-images.githubusercontent.com/80898083/130673802-4e998701-241f-4ec2-8963-32199ee091b7.png)
 
-Una vez programado el SoC fue necesario escribir el software que se ejecua en el procesador (código en C), para su uso; para esto se utilizo la informacion del archivo CSR.h (creado por Litex), el cual nos muestra todois los registros y las funciones en C que se pueden utilizar para escribir el software.
+Una vez programado el SoC fue necesario escribir el software que se ejecuta en el procesador (código en C), para su uso; para esto se utilizo la informacion del archivo CSR.h (creado por Litex), el cual nos muestra todois los registros y las funciones en C que se pueden utilizar para escribir el software.
 
 El mapa de memoria base de los registros es el siguiente:
 
-----------------Mapa de memoria-------------------
+![image](https://user-images.githubusercontent.com/80898083/130673843-df179038-3c83-4b81-8b01-f432ab76f3ef.png)
 
 # [Firmware](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/firmware)
 
