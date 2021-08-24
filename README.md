@@ -34,7 +34,7 @@ Se usó un procesador Riscv conectado por medio de un bus de comunicación Wishb
 
 ![image](https://user-images.githubusercontent.com/80898083/130673964-f07b6976-0e09-4301-bbe6-db3cff9b6bed.png)
 
-Una vez programado el SoC fue necesario escribir el software que se ejecuta en el procesador (código en C), para su uso; para esto se utilizo la informacion del archivo CSR.h (creado por Litex), el cual nos muestra todos los registros y las funciones en C que se pueden utilizar para escribir el software.
+Una vez programado el SoC fue necesario escribir el software que se ejecuta en el procesador (código en C), para su uso; para esto se utilizo la informacion del archivo [CSR.h](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/blob/main/Proyecto/build/nexys4ddr/software/include/generated/csr.h) (creado por Litex), el cual nos muestra todos los registros y las funciones en C que se pueden utilizar para escribir el software.
 
 El mapa de memoria base de los registros es el siguiente:
 
