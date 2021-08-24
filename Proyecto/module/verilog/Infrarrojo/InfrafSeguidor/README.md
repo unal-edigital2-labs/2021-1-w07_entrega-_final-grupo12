@@ -85,9 +85,9 @@ posteriormente en la memoria.
 ## Mapa de memoria 
  El mapa de memoria para el registro del driver IR es:
  
-![image](https://user-images.githubusercontent.com/36159520/130701755-3e1c05c2-9934-4547-a7e3-5ac068db48a7.png)
+![image](https://user-images.githubusercontent.com/36159520/130701970-29265d3f-1bbc-4138-baf6-b27bd37ea2a5.png)
 
-
+- Infrarrojo_ctrl_distancia: Al ser un sensor digital este registro cambia de uno a cero dependiedo si detecta negro u otro color.
 
 El siguiente código que se puede encontrar en el main.c para hacer la prueba del modulo IR, este modulo al ser digital mostrará un valor muy grande en binario 
 con los leds de la fpga cuando detecte negro y un valor pequeño cuando detecta blanco o otro color.
