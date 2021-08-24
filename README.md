@@ -27,7 +27,7 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 - [Motores](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Motor#motor)
 - [Mp3](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/MP3#mp3)
 
-# SoC Robot Cartógrafo
+# [SoC Robot Cartógrafo](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto)
 
 Se usó un procesador Riscv conectado por medio de un bus de comunicación Wishbone a registros y módulos previamente programados en Verilog, luego de esto se creó un SoC (System on Chip) por medio de Litex, la cual es una herramienta de código abierto capaz de ensamblar de manera sencilla todos los periféricos necesarios en el proyecto.El diseño del SoC realizado es el siguiente:
 
