@@ -4,6 +4,13 @@ Se utilizó el ultrasonido HC-SR04 el cual junto con el módulo PWM permite real
 
 ![image](https://user-images.githubusercontent.com/80898083/129965238-bd84f8e5-46dd-40d6-ac0c-49141b230b51.png)
 
+## Caja negra 
+
+la caja negra diseñada para este driver es la siguiente.
+
+![image](https://user-images.githubusercontent.com/36159520/130697541-600bd68d-4f57-49e2-bdfb-e8a238cc28f7.png)
+
+
 Funciona con dos pines, TRIG y ECHO. Cuando el pin del TRIGER recibe un pulso (mayor a 10us) emite varios pulsos; una vez emitidos los pulsos desde TRIG inicia un conteo en el módulo hasta que el pin ECHO los recibe.
 
 ![image](https://user-images.githubusercontent.com/80898083/129965440-eaaccf6f-8253-4a91-8e13-50b4082ab2e0.png)
@@ -85,6 +92,17 @@ assign trigg=(Doit && ~NoDoit);
 ```
  
 El resto de módulos encontrados en el bloque principal son divisores de frecuencia hechos para el correcto funcionamiento del ultra sonido.
+
+## Mapa de memoria 
+
+![image](https://user-images.githubusercontent.com/36159520/130697740-a45af731-b4e1-4b87-9c36-ccc07d5bc00f.png)
+
+- Ultrasonido_orden: Se usa para iniciar el procesamiento de la distancia, envia al pin de trigger el pulso que necesita para iniciar el ultrasonido. 
+- Ultrasonido_done: Se una para indicar la finalizacion de cada procesamiento que inicia orden.
+- Ultrasonido_d: Es el registro donde se guarda la distancia que calcula el ultraonido.
+
+
+## Test de sofware en C
 
 Se utilizó el siguiente código desde software para probar el funcionamiento del módulo:
 
