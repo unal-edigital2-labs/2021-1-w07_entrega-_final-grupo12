@@ -33,6 +33,7 @@ always @ (posedge clk)  begin
     
 endmodule
 ```
+Como se puede observar constantemente se esta enviando los 3.3V que equivale a un 1 logico para evitar que en pin IO_1 se vaya a tierra, una vez se manda por el pin un 0 logico, lo que equivale a tierra, realizara el cambio de cancion que hay en la tarjeta SD o lo que equivale a reprodicir el audio que esta en esa memoria.
 
 Se utilizó el siguiente código desde software para probar su funcionamiento:
 
