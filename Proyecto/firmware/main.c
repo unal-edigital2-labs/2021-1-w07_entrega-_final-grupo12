@@ -88,7 +88,7 @@ static void reboot(void)
 }
 
 
-
+//Función utilizada para probar los leds
 static void led_test(void)
 {
 	unsigned int i;
@@ -106,6 +106,8 @@ static void led_test(void)
 	}
 	
 }
+
+//Función utilizada para probar el pwm
 static void pwm_test(void)
 {  
         printf("Test del pwm... se interrumpe con el botton 1\n");
@@ -120,6 +122,8 @@ static void pwm_test(void)
 	delay_ms(3000);
 	}
 }
+
+//Función utilizada para reporducir el audio en la funcion test_mov
 static void mp3_play(void)
 {
   mp3_pasar1_write(0);
@@ -128,6 +132,8 @@ static void mp3_play(void)
   delay_ms(200);
   mp3_pasar1_write(0);
 }
+
+//Función utilizada para probar el mp3
 static void mp3_test(void)
 {
   printf("Test del mp3... se interrumpe con el botton 1\n");
@@ -142,6 +148,7 @@ static void mp3_test(void)
   }
 }
 
+//Función utilizada para probar los motores
 static void motor_test(void)
 {
     printf("Test del motor... se interrumpe con el botton 1\n");
@@ -159,7 +166,7 @@ static void motor_test(void)
 }
 
 
-
+//Función utilizada para probar el sensor ir
 static void test_ir(void){
 	while(!(buttons_in_read()&1)) {
 		leds_out_write(infrarrojo_cntrl_distancia_read());
@@ -167,6 +174,7 @@ static void test_ir(void){
 		}
 }
 
+//Función utilizada para probar el ultrasonido
 static int test_us(void){
 
         int d;
@@ -194,6 +202,7 @@ static void test_ultra(void){
 		}
 }
 
+//Función utilizada para el funcionamiento del robot
 static void test_mov(void){
 
 int distIR;
