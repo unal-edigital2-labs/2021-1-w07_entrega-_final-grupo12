@@ -11,6 +11,7 @@ En esta sección se muestran la caja negra y el mapa de memoria de los módulos 
 
  ### MAPA DE MEMORIA 
 El mapa de memoria de los registros de la UART es:
+
  ![image](https://user-images.githubusercontent.com/80898083/130701840-7bb0fc25-1511-4980-b5dd-6d7d637ea5e3.png)
  
 # GPIO
@@ -23,6 +24,7 @@ La caja negra del GPIO es :
 ## MAPA DE MEMORIA 
 
 Los módulos Leds y Buttons (integrados en el procesador) funcionan con el GPIO, por tanto el mapa de memoria de los registros del GPIO es: 
+
 ![image](https://user-images.githubusercontent.com/80898083/130702257-3366da7c-d603-4111-b257-f2db393c3ec7.png)
 
 - leds_out: Se utiliza para encender los leds de la FPGA.
@@ -32,11 +34,13 @@ Los módulos Leds y Buttons (integrados en el procesador) funcionan con el GPIO,
 
 ### CAJA NEGRA
 La caja negra del TIMER es :
+
 ![image](https://user-images.githubusercontent.com/80898083/130702724-56da995d-e6e8-44ea-ad72-ae590e98268e.png)
 
 
 ## MAPA DE MEMORIA 
 El mapa de memoria de los registros del TIMER es: 
+
 ![image](https://user-images.githubusercontent.com/80898083/130702759-ca39539c-cd75-4343-a9cd-1940bf063885.png)
 
 En el main se utiliza la función ***delay***.
