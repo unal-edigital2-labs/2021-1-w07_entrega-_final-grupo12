@@ -6,7 +6,7 @@ Se utilizó el ultrasonido HC-SR04 el cual junto con el módulo PWM permite real
 
 ## Caja negra 
 
-la caja negra diseñada para este driver es la siguiente.
+La caja negra diseñada para este driver es la siguiente.
 
 ![image](https://user-images.githubusercontent.com/36159520/130697541-600bd68d-4f57-49e2-bdfb-e8a238cc28f7.png)
 
@@ -98,7 +98,7 @@ El resto de módulos encontrados en el bloque principal son divisores de frecuen
 ![image](https://user-images.githubusercontent.com/36159520/130697740-a45af731-b4e1-4b87-9c36-ccc07d5bc00f.png)
 
 - Ultrasonido_orden: Se usa para iniciar el procesamiento de la distancia, envia al pin de trigger el pulso que necesita para iniciar el ultrasonido. 
-- Ultrasonido_done: Se una para indicar la finalizacion de cada procesamiento que inicia orden.
+- Ultrasonido_done: Se usa para indicar la finalizacion de cada procesamiento que inicia orden.
 - Ultrasonido_d: Es el registro donde se guarda la distancia que calcula el ultraonido.
 
 
