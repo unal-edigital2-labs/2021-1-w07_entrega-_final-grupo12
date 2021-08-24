@@ -1,3 +1,14 @@
+# Aclaración
+
+Se trabajaron dos códigos diferentes para este driver, 
+
+# CAJA NEGRA 
+
+La caja negra de la cámara es la siguiente: 
+
+![image](https://user-images.githubusercontent.com/80898083/130694519-3c25acd3-4669-4aee-a6ad-2f36fe9cff07.png)
+
+
 # CONFIGURACIÓN
 
 La configuración se realizó mediante el archivo “OV7670_SETUP_i2c.ino” donde se establece el formato que envía la cámara.
@@ -135,4 +146,19 @@ Las señales de salida son la del módulo VGA para mostrar la imagen de la cáma
 		output [1:0] figure, // 1: Triángulo, 2: Círculo, 3: cuadrado
 		output    done,
     
-    ```
+   ```
+    
+# Mapa de memoria
+
+Debido a que el driver de la cámara no pudo ser implementado al SoC por medio de Litex, no fue posible obtener un mapa de memoria específico para estos registros, por lo tanto el mapa es el siguiente:
+
+![image](https://user-images.githubusercontent.com/80898083/130694851-e3d88eec-e197-4199-b742-8d2a2508ed2e.png)
+
+- camara_init: Se utilizó para iniciar el procesamiento de imagen de la cámara (identificar el color y la figura).
+- camara_figura: Se utiliza para identificar la figura que observa la cámara.
+- camara_color: Se utiliza para identificar el color que observa la cámara.
+- camara_done: Indica cuando finaliza el proceso de identificar el color y la figura.
+
+### Tampoco se creó una función escrita en C para controlar el driver desde software pues los registros no se definieron en memoria.
+
+
