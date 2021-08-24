@@ -95,6 +95,8 @@ El resto de módulos encontrados en el bloque principal son divisores de frecuen
 
 ## Mapa de memoria 
 
+El mapa de memoria para los registros del dirver Ultrasonido es:
+
 ![image](https://user-images.githubusercontent.com/36159520/130697740-a45af731-b4e1-4b87-9c36-ccc07d5bc00f.png)
 
 - Ultrasonido_orden: Se usa para iniciar el procesamiento de la distancia, envia al pin de trigger el pulso que necesita para iniciar el ultrasonido. 
@@ -102,7 +104,7 @@ El resto de módulos encontrados en el bloque principal son divisores de frecuen
 - Ultrasonido_d: Es el registro donde se guarda la distancia que calcula el ultraonido.
 
 
-## Test de sofware en C
+## Test desde sofware en C
 
 Se utilizó el siguiente código desde software para probar el funcionamiento del módulo:
 
