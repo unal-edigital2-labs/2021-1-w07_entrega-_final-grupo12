@@ -1,7 +1,10 @@
 # INFRARROJO
 Este módulo es un Sensor tipo réflex en board diseñado para aplicaciones de detección de contraste y seguimiento de línea, la salida está diseñada para ser leída en forma digital de un Microcontrolador, Arduino o Raspberry.
 
-![image](https://user-images.githubusercontent.com/36159520/129967946-31d87512-6387-468b-9619-48f82e018077.png)
+![unknown](https://user-images.githubusercontent.com/36159520/130700935-3369f2ae-0f6f-40aa-b7c4-eea4edff88f8.png)
+
+
+imagen tomada del siguiente [Link](https://a.pololu-files.com/picture/0J631.297.png?ae9455b459ff6470ff8055966838a530) 
 
 ## Principales Características: 
 - Voltaje de Operación: 3.3V ~ 5V.
