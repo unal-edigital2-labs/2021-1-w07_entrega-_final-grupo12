@@ -4,9 +4,13 @@ Pare reproducir un audio mientras el robot esta detenido y escaneando lo que tie
 
 ![image](https://user-images.githubusercontent.com/80898083/129971680-c941b815-ba4d-4dfc-ba22-9a09b923be95.png)
 
+Imágen tomada del siguiente [Link](https://picaxe.com/docs/spe033.pdf)
+
 Sin embargo se utilizó la conexión mostrada en la siguiente figura donde se utiliza el pin IO-1 para reporducir el audio guardado en la posición 1 de la memoria SD:
 
 ![image](https://user-images.githubusercontent.com/80898083/130477572-ad0b8e81-e7b7-4af0-8f4f-31a64df1ef39.png)
+
+Imágen tomada del siguiente [Link](https://picaxe.com/docs/spe033.pdf)
 
 ## Caja negra
 La caja negra diseñada para este driver es la siguiente.
