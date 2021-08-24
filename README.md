@@ -20,7 +20,7 @@ En el presente repositorio se encuentra la documentación del proyecto propuesto
 
 En esta sección se encuentran los archivos de Phyton que integran los módulos en Litex. Además hay un listado con los módulos trabajados en el proyecto a los cuales podrá darle click para ser dirigido a los archivos de Verilog respectivamente.
 
-- [Cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/CamaraDef)
+- [Cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Camara#configuración)
 - [Ir](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Infrarrojo/InfrafSeguidor#infrarrojo)
 - [UltraSonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/UltraSonido/Ultrasonido#ultrasonido)
 - [PWM](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Servomotor/PWM#pwm)
@@ -29,13 +29,13 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 
 # [SoC Robot Cartógrafo](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto)
 
-Se usó un procesador Riscv conectado por medio de un bus de comunicación Wishbone a registros y módulos previamente programados en Verilog, luego de esto se creó un SoC (System on Chip) por medio de Litex, la cual es una herramienta de código abierto capaz de ensamblar de manera sencilla todos los periféricos necesarios en el proyecto.El diseño del SoC realizado es el siguiente:
+Se usó un procesador Riscv conectado por medio de un bus de comunicación Wishbone a diferentes módulos previamente programados en Verilog, esto se integra a un SoC (System on Chip) por medio de Litex, la cual es una herramienta de código abierto capaz de ensamblar de manera sencilla todos los periféricos necesarios en el proyecto.El diseño del SoC realizado es el siguiente:
 
 ----------------SoC------------
 
-Una vez creado el SoC (capaz de ejecutar el código escrito de los módulos hechos en Verilog) fue necesario escribir el software (código en C) para su uso; para esto se utilizó el archivo CSR.h (creado por Litex), el cual nos muestra todas las funciones en C que se pueden utilizar para escribir el software.
+Una vez programado el SoC fue necesario escribir el software que se ejecua en el procesador (código en C), para su uso; para esto se utilizo la informacion del archivo CSR.h (creado por Litex), el cual nos muestra todas las funciones en C que se pueden utilizar para escribir el software.
 
-El mapa de memoria base es:
+El mapa de memoria base es el siguiente:
 
 ----------------Mapa de memoria-------------------
 
