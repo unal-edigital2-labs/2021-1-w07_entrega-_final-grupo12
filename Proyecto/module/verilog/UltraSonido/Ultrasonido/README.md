@@ -4,6 +4,9 @@ Se utilizó el ultrasonido HC-SR04 el cual junto con el módulo PWM permite real
 
 ![image](https://user-images.githubusercontent.com/80898083/129965238-bd84f8e5-46dd-40d6-ac0c-49141b230b51.png)
 
+Imágen tomada del siguiente [Link](https://datasheetspdf.com/pdf-file/1380136/ETC/HC-SR04/1)
+
+
 ## Caja negra 
 
 La caja negra diseñada para este driver es la siguiente.
@@ -14,6 +17,8 @@ La caja negra diseñada para este driver es la siguiente.
 Funciona con dos pines, TRIG y ECHO. Cuando el pin del TRIGER recibe un pulso (mayor a 10us) emite varios pulsos; una vez emitidos los pulsos desde TRIG inicia un conteo en el módulo hasta que el pin ECHO los recibe.
 
 ![image](https://user-images.githubusercontent.com/80898083/129965440-eaaccf6f-8253-4a91-8e13-50b4082ab2e0.png)
+
+Imagen tomada del siguiente [Link](https://datasheetspdf.com/pdf-file/1380136/ETC/HC-SR04/1)
 
  
 La distancia se calcula con la siguiente fórmula:
