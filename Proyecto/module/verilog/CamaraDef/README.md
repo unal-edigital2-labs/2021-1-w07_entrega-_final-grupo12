@@ -2,7 +2,7 @@
 
 Se trabajaron dos códigos diferentes para este driver, la primera versión se encuentra en la carpeta ***Camara*** para la cual se creó el archivo ***camara.py*** encontrado en la carpeta [module](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module), este código funcionó únicamente desde hardware, pues los registros utilizados para controlar el driver desde software no funcionaron correctamente, sin embargo fue necesario utilizar tanto la carpeta ***Camara*** como el archivo ***camara.py*** para la correcta implementación de todos los módulos en Litex.
 
-En esta sección se explicará el código encontrado en la carpeta ***CamaraDef***, para el cuál se creó un archivo .py (posteriormente eliminado) para la implementación en Litex, este tampoco funcionó pues la compilación arrojaba errores que no fueron posibles de solucionar; sin embargo el funcionamiento desde hardware es más completo en comparación al anterior.
+En esta sección se explicará el código encontrado en la carpeta ***CamaraDef***, para el cuál se creó un archivo .py (posteriormente eliminado) para su implementación en Litex, este tampoco funcionó pues la compilación arrojaba errores que no fueron posibles de solucionar; sin embargo el funcionamiento desde hardware es más completo en comparación al anterior.
 
 # CAJA NEGRA 
 
