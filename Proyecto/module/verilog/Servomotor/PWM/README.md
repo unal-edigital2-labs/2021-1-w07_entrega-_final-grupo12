@@ -5,6 +5,8 @@ Para orientar el ultrasonido y la cámara en las direcciones que se requiere, se
 
 ![image](https://user-images.githubusercontent.com/80898083/129970920-19c28b06-f383-48fb-a5ca-b65e47f02703.png)
 
+Imágen tomada del siguiente [Link](https://pdf1.alldatasheet.com/datasheet-pdf/view/1132104/ETC2/MG90S.html)
+
 ## Caja negra 
 
 La caja negra diseñada para este modulo es la siguiente 
@@ -74,6 +76,9 @@ Después de esto se realiza la modulación de pulsos mediante un contador y una 
   end
 ```
 ![image](https://user-images.githubusercontent.com/80898083/129971042-585ece5f-87f5-46d3-b024-47dd88db6a07.png)
+
+
+Imágen tomada del siguiente [Link](https://pdf1.alldatasheet.com/datasheet-pdf/view/1132104/ETC2/MG90S.html)
 
 ## Mapa de memoria
 
