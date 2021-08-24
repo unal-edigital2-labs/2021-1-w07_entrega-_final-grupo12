@@ -5,6 +5,12 @@ Para orientar el ultrasonido y la cámara en las direcciones que se requiere, se
 
 ![image](https://user-images.githubusercontent.com/80898083/129970920-19c28b06-f383-48fb-a5ca-b65e47f02703.png)
 
+## Caja negra 
+
+La caja negra diseñada para este modulo es la siguiente 
+
+![image](https://user-images.githubusercontent.com/36159520/130699975-457cc9f3-384e-4156-86f8-49b7f92bbb14.png)
+
 La salida del pin de datos (PWM) requiere de ciertas condiciones en la señal de entrada, las cuales se programan en el modulo PWM del Verilog, se hace inicialmente un divisor de frecuencia para disminuir la frecuencia de reloj de la FPGA a la que se pide en el datasheet del servomotor.
 
 ```verilog
@@ -69,7 +75,13 @@ Después de esto se realiza la modulación de pulsos mediante un contador y una 
 ```
 ![image](https://user-images.githubusercontent.com/80898083/129971042-585ece5f-87f5-46d3-b024-47dd88db6a07.png)
 
-Este registro se utiliza desde software para girar el servomotor a la derecha, izquierda y delante de la siguiente manera:
+## Mapa de memoria
+
+El mapa de memoria para los registros del driver PWM es:
+
+![image](https://user-images.githubusercontent.com/36159520/130700183-7ab1a77f-cd49-4279-b9b7-fa6a586ccb7a.png)
+
+- Este registro se utiliza desde software para girar el servomotor a la derecha, izquierda y delante de la siguiente manera:
 
 
 |Valor del registro |	Movimiento realizado |
@@ -77,6 +89,11 @@ Este registro se utiliza desde software para girar el servomotor a la derecha, i
 |100 |	Servomotor en 90 grados (mirando al frente) |
 |101 |	Servomotor en 180 grados (mirando a la derecha)| 
 |110 |	Servomotor en 0 grados (mirando a la izquierda)|
+
+
+
+
+## Test desde sofware en C
 
 Se realiza la prueba del modulo del servomotor en litex con el siguiente fragmento encontrado en el main.c
 
