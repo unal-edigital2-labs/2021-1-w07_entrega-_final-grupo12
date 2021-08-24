@@ -1,10 +1,10 @@
 # INFRARROJO
 Este módulo es un Sensor tipo réflex en board diseñado para aplicaciones de detección de contraste y seguimiento de línea, la salida está diseñada para ser leída en forma digital de un Microcontrolador, Arduino o Raspberry.
 
-![unknown](https://user-images.githubusercontent.com/36159520/130700935-3369f2ae-0f6f-40aa-b7c4-eea4edff88f8.png)
+![image](https://user-images.githubusercontent.com/36159520/130701337-e2df506f-72e2-4a39-9396-c37209a17670.png)
 
 
-imagen tomada del siguiente [Link](https://a.pololu-files.com/picture/0J631.297.png?ae9455b459ff6470ff8055966838a530) 
+imagen tomada del siguiente [Link](https://cdn.shopify.com/s/files/1/2267/1961/products/QTR_-_1RC_Sensor_de_Linea_Digital_x_2_Piezas_QTR_1RC_Ferretronica_843fd511-3fd1-4b79-b906-37eda81d5580_512x512.jpg?v=1577493854) 
 
 ## Principales Características: 
 - Voltaje de Operación: 3.3V ~ 5V.
@@ -19,7 +19,10 @@ módulo como un sensor detector de línea negra, esto permite identificar cuando
 los módulos de ultrasonido y servomotor, mientras el módulo se encuentre en línea negra avanzan los motores, cuando El módulo QTR-1RC es un sensor de reflectancia, el 
 fototransistor utiliza un circuito de descarga capacitiva que permite leer una señal de entrada/Salida digital de un microcontrolador.
 
-![image](https://user-images.githubusercontent.com/36159520/129968279-7e3eb862-8683-418c-ae7f-ebfea8578d31.png)
+![unknown](https://user-images.githubusercontent.com/36159520/130700935-3369f2ae-0f6f-40aa-b7c4-eea4edff88f8.png)
+
+
+imagen tomada del siguiente [Link](https://a.pololu-files.com/picture/0J631.297.png?ae9455b459ff6470ff8055966838a530) 
 
 La carga y descarga capacitiva proporciona la diferencia de potencial del condensador que pasa de 0 a 1 en determinado tiempo el cual se puede usar para saber a qué distancia se 
 encuentra un objeto.
