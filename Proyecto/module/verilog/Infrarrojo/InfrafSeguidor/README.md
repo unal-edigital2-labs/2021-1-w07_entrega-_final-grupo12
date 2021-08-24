@@ -6,6 +6,11 @@ Este módulo es un Sensor tipo réflex en board diseñado para aplicaciones de d
 
 imagen tomada del siguiente [Link](https://cdn.shopify.com/s/files/1/2267/1961/products/QTR_-_1RC_Sensor_de_Linea_Digital_x_2_Piezas_QTR_1RC_Ferretronica_843fd511-3fd1-4b79-b906-37eda81d5580_512x512.jpg?v=1577493854) 
 
+## Caja negra 
+La caja negra implementada para este modulo es la siguiente:
+
+![image](https://user-images.githubusercontent.com/36159520/130701788-8af21878-23fa-409b-b75a-60c9b244a90c.png)
+
 ## Principales Características: 
 - Voltaje de Operación: 3.3V ~ 5V.
 - Consumo de corriente: 25 mA.
@@ -76,6 +81,13 @@ inicia la carga y el valor de ir_io pasa de 0 a 1.
  ```
 Luego de finalizar el ciclo el valor de los contadores es reiniciado a 0 así mismo los valores del ancho del pulso son guardados en registro para ser enviados 
 posteriormente en la memoria.
+
+## Mapa de memoria 
+ El mapa de memoria para el registro del driver IR es:
+ 
+![image](https://user-images.githubusercontent.com/36159520/130701755-3e1c05c2-9934-4547-a7e3-5ac068db48a7.png)
+
+
 
 El siguiente código que se puede encontrar en el main.c para hacer la prueba del modulo IR, este modulo al ser digital mostrará un valor muy grande en binario 
 con los leds de la fpga cuando detecte negro y un valor pequeño cuando detecta blanco o otro color.
