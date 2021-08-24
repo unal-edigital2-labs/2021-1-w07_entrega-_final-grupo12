@@ -12,6 +12,8 @@ Para poder controlar los motores DC y aumentar la potencia con la que trabajan s
 
 ![image](https://user-images.githubusercontent.com/80898083/129972359-bf668713-1e34-4258-84e7-09dbf1d84347.png)
 
+Imágenes tomadas del siguiente [Link](https://www.prometec.net/l298n/)
+
 En las salidas A y B se conectan los dos motores, los cuales funcionaran con el voltaje de la fuente Vin que se conecte. P ara el control digital se debe tener una tierra común entre la FPGA y la fuente y enviar un uno o cero lógicos en las entradas IN1 a IN4, por lo que la entrada digital será de 4 Bits. Estos bits se programan en Verilog como un registro igualado a la salida.
 
 ```verilog
