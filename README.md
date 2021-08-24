@@ -26,6 +26,7 @@ En esta sección se encuentran los archivos de Phyton que integran los módulos 
 - [PWM](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Servomotor/PWM#pwm)
 - [Motores](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/Motor#motor)
 - [Mp3](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog/MP3#mp3)
+- [Otros](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto/module/verilog)
 
 # [SoC Robot Cartógrafo](https://github.com/unal-edigital2/w07_entrega-_final-grupo12/tree/main/Proyecto)
 
