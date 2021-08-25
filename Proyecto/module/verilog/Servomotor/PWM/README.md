@@ -78,7 +78,7 @@ Después de esto se realiza la modulación de pulsos mediante un contador y una 
 ![image](https://user-images.githubusercontent.com/80898083/129971042-585ece5f-87f5-46d3-b024-47dd88db6a07.png)
 
 
-Imágen tomada del siguiente [Link](https://pdf1.alldatasheet.com/datasheet-pdf/view/1132104/ETC2/MG90S.html)
+Imágen tomada del siguiente [Link](https://dronprofesional.com/blog/tutorial-teorico-practico-con-servos-y-arduino/)
 
 ## Mapa de memoria
 
