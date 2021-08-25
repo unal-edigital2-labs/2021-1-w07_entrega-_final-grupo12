@@ -23,7 +23,7 @@ La caja negra del GPIO es :
 
 ## MAPA DE MEMORIA 
 
-Los módulos Leds y Buttons (integrados en el procesador) funcionan con el GPIO, por tanto el mapa de memoria de los registros del GPIO es: 
+Los Leds y los Botones (integrados por defecto) funcionan con el GPIO, por tanto el mapa de memoria de los registros del GPIO es: 
 
 ![image](https://user-images.githubusercontent.com/80898083/130702257-3366da7c-d603-4111-b257-f2db393c3ec7.png)
 
