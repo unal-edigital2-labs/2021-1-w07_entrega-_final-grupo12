@@ -28,7 +28,7 @@ Los módulos Leds y Buttons (integrados en el procesador) funcionan con el GPIO,
 ![image](https://user-images.githubusercontent.com/80898083/130702257-3366da7c-d603-4111-b257-f2db393c3ec7.png)
 
 - leds_out: Se utiliza para encender los leds de la FPGA.
-- buttons_in: Se utiliza para habilitar el funcionamiento de un botón de la FPGA.
+- buttons_in: Se utiliza para leer si hay accionamiento de un botón de la FPGA.
 
 # TIMER
 
@@ -43,7 +43,7 @@ El mapa de memoria de los registros del TIMER es:
 
 ![image](https://user-images.githubusercontent.com/80898083/130702759-ca39539c-cd75-4343-a9cd-1940bf063885.png)
 
-En el main se utiliza la función ***delay***.
+En el main se utiliza la función ***delay*** con frecuencia.
 
 
  
