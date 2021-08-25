@@ -27,9 +27,7 @@ fototransistor utiliza un circuito de descarga capacitiva que permite leer una s
 ![unknown](https://user-images.githubusercontent.com/36159520/130700935-3369f2ae-0f6f-40aa-b7c4-eea4edff88f8.png)
 
 
-imagen tomada del siguiente [Link](https://cdn.shopify.com/s/files/1/2267/1961/files/Hoja_Tecnica_Sensor_Reflex_QTR-1A_y_QTR-1RC.pdf?133
-![image](https://user-images.githubusercontent.com/36159561/130706845-6706b0ba-4212-41bb-b466-4218f4e040d2.png)
-) 
+imagen tomada del siguiente [Link](https://cdn.shopify.com/s/files/1/2267/1961/files/Hoja_Tecnica_Sensor_Reflex_QTR-1A_y_QTR-1RC.pdf?133)
 
 La carga y descarga capacitiva proporciona la diferencia de potencial del condensador que pasa de 0 a 1 en determinado tiempo el cual se puede usar para saber a qué distancia se 
 encuentra un objeto.
