@@ -19,7 +19,7 @@ El mapa de memoria de los registros de la UART es:
 ### CAJA NEGRA
 La caja negra del GPIO es :
 
-![image](https://user-images.githubusercontent.com/80898083/130702182-c2bc6747-b152-468b-9432-64b933936b26.png)
+![image](https://user-images.githubusercontent.com/80898083/130836425-ac8eb35e-ba8a-4e48-9282-5fe218937042.png)
 
 ## MAPA DE MEMORIA 
 
